@@ -1,4 +1,4 @@
-﻿name: RezaPipline
+﻿name: Docker CI/CD Pipeline
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # چک کردن کد پروژه
+        uses: actions/checkout@v4  # چک کردن کد پروژه با نسخه جدید
 
       # ساخت Docker image
       - name: Build Docker image
@@ -19,7 +19,7 @@ jobs:
 
       # لاگین به Docker Hub
       - name: Log in to Docker Hub
-        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       # ارسال Docker image به Docker Hub
       - name: Push Docker image to Docker Hub
