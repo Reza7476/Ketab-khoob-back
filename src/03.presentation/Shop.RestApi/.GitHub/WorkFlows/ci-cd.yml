@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-      - mater  # وقتی که به شاخه main push می‌کنی
+      - master  # وقتی که به شاخه master push می‌کنی
 
 jobs:
   build:
