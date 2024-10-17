@@ -7,4 +7,5 @@ using System.Threading.Tasks;
 namespace Shop.Application;
 internal class test
 {
+    public int MyProperty { get; set; }
 }
