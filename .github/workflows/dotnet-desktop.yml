@@ -3,7 +3,7 @@ name: Docker CI/CD Pipeline
 on:
   push:
     branches:
-      - master  # وقتی که به شاخه master push می‌کنی
+      - master  # اطمینان حاصل کنید که شاخه صحیح را استفاده می‌کنید
 
 jobs:
   build:
