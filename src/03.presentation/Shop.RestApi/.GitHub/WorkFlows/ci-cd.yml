@@ -1,46 +1,26 @@
-﻿name: CI/CD Pipeline for .NET Project
+﻿name: Docker CI/CD Pipeline
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main  # وقتی که به شاخه main push می‌کنی
 
 jobs:
   build:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest  # این پایپلاین روی سرورهای لینوکس اجرا می‌شود
 
     steps:
-      # 1. چک کردن کد پروژه
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3  # چک کردن کد پروژه
 
-      # 2. نصب .NET SDK
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.x'  # نسخه .NET که نیاز داری
-
-      # 3. بازگرداندن وابستگی‌ها
-      - name: Restore dependencies
-        run: dotnet restore
-
-      # 4. ساختن پروژه
-      - name: Build the project
-        run: dotnet build --configuration Release --no-restore
-
-      # 5. اجرای تست‌ها
-      - name: Run unit tests
-        run: dotnet test --no-build --verbosity normal
-
-      # 6. ساختن Docker Image (در صورت نیاز به Dockerize)
+      # ساخت Docker image
       - name: Build Docker image
-        run: docker build -t your-dockerhub-username/your-project-name .
+        run: docker build -t reza/Shop-ketab-khoob .
 
-      # 7. ارسال Docker image به Docker Hub (در صورت نیاز به Dockerize)
+      # لاگین به Docker Hub
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+
+      # ارسال Docker image به Docker Hub
       - name: Push Docker image to Docker Hub
-        run: |
-          echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
-          docker push your-dockerhub-username/your-project-name
+        run: docker push reza/Shop-ketab-khoob
