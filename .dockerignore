@@ -1,30 +1,24 @@
-**/.classpath
-**/.dockerignore
-**/.env
-**/.git
-**/.gitignore
-**/.project
-**/.settings
-**/.toolstarget
-**/.vs
-**/.vscode
-**/*.*proj.user
-**/*.dbmdl
-**/*.jfm
-**/azds.yaml
-**/bin
-**/charts
-**/docker-compose*
-**/Dockerfile*
-**/node_modules
-**/npm-debug.log
-**/obj
-**/secrets.dev.yaml
-**/values.dev.yaml
-LICENSE
-README.md
-!**/.gitignore
-!.git/HEAD
-!.git/config
-!.git/packed-refs
-!.git/refs/heads/**
+# Ignore .NET build results
+bin/
+obj/
+**/*.user
+**/*.suo
+**/*.vs
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.sln
+*.csproj.user
+
+# Ignore logs
+*.log
+
+# Ignore configuration files
+appsettings.Development.json
+appsettings.Test.json
+
+# Ignore other unnecessary files
+*.md
+*.json
+*.xml

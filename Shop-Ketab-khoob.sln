@@ -17,29 +17,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.infrastructure", "02.inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.presentation", "03.presentation", "{0458C83A-B3DB-4156-B9C3-82227441CBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.RestApi", "src\03.presentation\Shop.RestApi\Shop.RestApi.csproj", "{444D3F91-2EE7-4871-9271-8187B931DBD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.RestApi", "src\03.presentation\Shop.RestApi\Shop.RestApi.csproj", "{444D3F91-2EE7-4871-9271-8187B931DBD3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E378609F-F138-4C5F-9978-BE51741EBD28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Application.Tests.Integration", "test\Shop.Application.Tests.Integration\Shop.Application.Tests.Integration.csproj", "{F10AA1BA-8E4A-4F44-940C-F774FE1B2D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Application.Tests.Integration", "test\Shop.Application.Tests.Integration\Shop.Application.Tests.Integration.csproj", "{F10AA1BA-8E4A-4F44-940C-F774FE1B2D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Applications.Tests.Unit", "test\Shop.Applications.Tests.Unit\Shop.Applications.Tests.Unit.csproj", "{00441F09-0C14-49EF-9B58-D287F5B01D9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Applications.Tests.Unit", "test\Shop.Applications.Tests.Unit\Shop.Applications.Tests.Unit.csproj", "{00441F09-0C14-49EF-9B58-D287F5B01D9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.infrastructure.Tests.Integration", "test\Shop.infrastructure.Tests.Integration\Shop.infrastructure.Tests.Integration.csproj", "{0F213F6D-00ED-47D6-878C-1F6C89FEEF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.infrastructure.Tests.Integration", "test\Shop.infrastructure.Tests.Integration\Shop.infrastructure.Tests.Integration.csproj", "{0F213F6D-00ED-47D6-878C-1F6C89FEEF1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Infrastructure.Tests.Unit", "test\Shop.Infrastructure.Tests.Unit\Shop.Infrastructure.Tests.Unit.csproj", "{564AF620-6220-4934-B182-EBB5929141C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Infrastructure.Tests.Unit", "test\Shop.Infrastructure.Tests.Unit\Shop.Infrastructure.Tests.Unit.csproj", "{564AF620-6220-4934-B182-EBB5929141C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Persistence.Tests.Unit", "test\Shop.Persistence.Tests.Unit\Shop.Persistence.Tests.Unit.csproj", "{693F4DA1-59AA-459D-BDFD-9E015F6DF67F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Persistence.Tests.Unit", "test\Shop.Persistence.Tests.Unit\Shop.Persistence.Tests.Unit.csproj", "{693F4DA1-59AA-459D-BDFD-9E015F6DF67F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Services.Tests.Integration", "test\Shop.Services.Tests.Integration\Shop.Services.Tests.Integration.csproj", "{3FF1F679-5357-465C-BC4E-2CF334BCA885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Services.Tests.Integration", "test\Shop.Services.Tests.Integration\Shop.Services.Tests.Integration.csproj", "{3FF1F679-5357-465C-BC4E-2CF334BCA885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Services.Tests.Unit", "test\Shop.Services.Tests.Unit\Shop.Services.Tests.Unit.csproj", "{FD2CF675-4BFB-443A-9C19-E647C2D2B017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Services.Tests.Unit", "test\Shop.Services.Tests.Unit\Shop.Services.Tests.Unit.csproj", "{FD2CF675-4BFB-443A-9C19-E647C2D2B017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Spec.Tests", "test\Shop.Spec.Tests\Shop.Spec.Tests.csproj", "{C790EF23-5A1E-4A65-B380-88A11C5090FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Spec.Tests", "test\Shop.Spec.Tests\Shop.Spec.Tests.csproj", "{C790EF23-5A1E-4A65-B380-88A11C5090FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.TestTools", "test\Shop.TestTools\Shop.TestTools.csproj", "{3973148B-6330-4D80-B1B3-726FADF64D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.TestTools", "test\Shop.TestTools\Shop.TestTools.csproj", "{3973148B-6330-4D80-B1B3-726FADF64D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Infrastructure", "src\02.infeastructure\Shop.Infrastructure\Shop.Infrastructure.csproj", "{1AACD190-1BD6-455A-9F92-7DB23072C47E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Infrastructure", "src\02.infeastructure\Shop.Infrastructure\Shop.Infrastructure.csproj", "{1AACD190-1BD6-455A-9F92-7DB23072C47E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

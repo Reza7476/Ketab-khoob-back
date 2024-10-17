@@ -14,4 +14,8 @@
     <None Include=".GitHub\WorkFlows\ci-cd.yml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DockerFile\" />
+  </ItemGroup>
+
 </Project>
