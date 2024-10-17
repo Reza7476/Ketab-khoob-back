@@ -15,7 +15,7 @@ jobs:
 
       # ساخت Docker image
       - name: Build Docker image
-        run: docker build -t reza/Shop-ketab-khoob .
+        run: docker build -t reza/shop-ketab-khoob .  # تغییر نام مخزن به حروف کوچک
 
       # لاگین به Docker Hub
       - name: Log in to Docker Hub
@@ -23,4 +23,4 @@ jobs:
 
       # ارسال Docker image به Docker Hub
       - name: Push Docker image to Docker Hub
-        run: docker push reza/Shop-ketab-khoob
+        run: docker push reza/shop-ketab-khoob  # تغییر نام مخزن به حروف کوچک
