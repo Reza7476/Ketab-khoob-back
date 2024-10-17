@@ -11,11 +11,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # چک کردن کد پروژه با نسخه جدید
+        uses: actions/checkout@v3  # چک کردن کد پروژه
 
       # ساخت Docker image
       - name: Build Docker image
-        run: docker build -t reza/shop-ketab-khoob .  # تغییر نام مخزن به حروف کوچک
+        run: docker build -t reza/shop-ketab-khoob -f rest/dockerfile/Dockerfile .
 
       # لاگین به Docker Hub
       - name: Log in to Docker Hub
@@ -23,4 +23,4 @@ jobs:
 
       # ارسال Docker image به Docker Hub
       - name: Push Docker image to Docker Hub
-        run: docker push reza/shop-ketab-khoob  # تغییر نام مخزن به حروف کوچک
+        run: docker push reza/shop-ketab-khoob
