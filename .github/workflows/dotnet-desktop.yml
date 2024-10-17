@@ -15,7 +15,7 @@ jobs:
 
       # ساخت Docker image
       - name: Build Docker image
-        run: docker build -t reza/shop-ketab-khoob -f rest/dockerfile/Dockerfile .
+        run: docker build -t reza/shop-ketab-khoob -f Shop.RestApi/dockerfile/Dockerfile .
 
       # لاگین به Docker Hub
       - name: Log in to Docker Hub
