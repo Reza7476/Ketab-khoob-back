@@ -1,0 +1,26 @@
+name: RezaPipline
+
+on:
+  push:
+    branches:
+      - master  # وقتی که به شاخه master push می‌کنی
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # این پایپلاین روی سرورهای لینوکس اجرا می‌شود
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # چک کردن کد پروژه
+
+      # ساخت Docker image
+      - name: Build Docker image
+        run: docker build -t reza/Shop-ketab-khoob .
+
+      # لاگین به Docker Hub
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+
+      # ارسال Docker image به Docker Hub
+      - name: Push Docker image to Docker Hub
+        run: docker push reza/Shop-ketab-khoob
